@@ -1,4 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
 nav {
     font-family: 'Bruno Ace SC', cursiv;
+}
+
+li {
+    border: 2px solid;
+    border-radius: 25px 15px;
+    border-top: none;
+    border-bottom: none;
+}
+
+li:hover {
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    color: black;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto; 
 }

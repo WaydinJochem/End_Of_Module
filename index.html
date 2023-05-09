@@ -15,6 +15,7 @@
 
 <body class="bg-dark-subtle ">
     <header>
+        <!-- Nav Bar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -42,16 +43,19 @@
                             <a class="nav-link" href="#">Testimonials</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <!-- Nav Bar -->
+        <!-- Landing Page -->
         <div class=" container-fluid p-5 w-100% h-auto bg-" id="image">
             <h1 class="text-center text-decoration-underline fw-bold text-light">Waydin Jochem</h1>
             <img src="./Assets/images/Waydin Jochem C12 C1 25Apr23 (2).JPG"
-                class="d-block mx-auto border border-subtle rounded-circle text-center text-light img-fluid" alt="" style="width: 250px; height: 20%;">
+                class="d-block mx-auto border border-subtle rounded-circle text-center text-light img-fluid " alt=""
+                style="width: 250px; height: 20%;">
             <marquee behavior="scroll" direction="up" id="center" class="text-uppercase text-light" width="50%">
                 <h3>Aspiring Software Dev</h3><br>
                 <h3>Aspiring Tech-Guru</h3><br>
@@ -59,8 +63,10 @@
                 <h3>Aspiring to Be More</h3>
             </marquee>
         </div>
+        <!-- Landing Page -->
     </header>
-    <section id="About" class="grid-container">
+    <!-- Start Of About -->
+    <section id="About" class="grid-container bg-warning">
         <div id="E&E" class="grid-item">
             <h4>Education</h4>
             <h4>Experience</h4>
@@ -72,13 +78,75 @@
             <h4>Projects</h4>
         </div>
     </section>
-    <footer class="border border-3 border-white bg-warning-subtle" id="Contact">
+    <!-- End of About -->
+    <!-- Start of footer Sub-section -->
+    <footer class="border border-3 border-white bg-warning-subtle mt-5" id="Contact">
+        <div class="grid-container py-3">
+            <div class="grid-item">
+                <h6 class="text-secondary">Home</h6>
+                <ul class="list-unstyled">
+                    <li class="">Landing Page</li>
+                    <li class="">Profile Picture</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h6 class="text-secondary">About</h6>
+                <ul class="list-unstyled">
+                    <li>Skills</li>
+                    <li>Education</li>
+                    <li>Experience</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h6 class="text-secondary">Testimonials</h6>
+                <ul class="list-unstyled">
+                    <li># Testimonial</li>
+                    <li># Testimonial</li>
+                    <li># Testimonial</li>
+                    <li># Testimonial</li>
+                </ul>
+            </div>
+        </div>
         <div class="text-center mx-5 p-3">For More Information or to get in contact with me, make use of the following
             links
         </div>
-        <img src="./Assets/icons/icons8-twitter-circled.gif" alt="" width="40px" class="text-left"><a
-            href=" https://twitter.com/WaydinJochem?t=TbGXE_43BrbopC1Z5_H1Iw&s=31">Twitter</a></img>
-        &copy; 2023 Waydin Jochem
+        <!-- End of Footer Sub-section -->
+        <div id="Contact" class="py-3 bg-body-secondary">
+            <!-- Start of contact -->
+            <form action="https://formspree.io/f/meqwnbyb" method="POST">
+                <div>
+                    <div class="row text-center">
+                        <div>
+                            <label>
+                                Name:
+                                <input type="text" name="FullName" placeholder="fullNAme">
+                            </label>
+                        </div>
+                        <div class="mt-2"><label class="">
+                                Contact Number
+                                <input type="tel" name="Number" placeholder="Number">
+                            </label></div>
+                        <div class="mt-2"> <label>
+                                Your email:
+                                <input type="email" name="email" placeholder="name@gmail.com">
+                            </label></div>
+                        <div class="mt-2">
+                            <div><label>
+                                    Your message:
+                                </label></div>
+                            <textarea placeholder="Insert Message" cols="50" rows="13"></textarea>
+                        </div>
+                        <div> <button type="submit">Send</button></div>
+                    </div>
+                </div>
+            </form>
+            <!-- End Of Contact -->
+        </div>
+        <div class="bg-body-secondary">
+            <img src="./Assets/icons/icons8-twitter-circled.gif" alt="" width="40px" class="text-left"><a
+                href=" https://twitter.com/WaydinJochem?t=TbGXE_43BrbopC1Z5_H1Iw&s=31">Twitter</a></img>
+            &copy; 2023 Waydin Jochem
+        </div>
     </footer>
     <script src="https://kit.fontawesome.com/850ca6a355.js"></script>
 </body>

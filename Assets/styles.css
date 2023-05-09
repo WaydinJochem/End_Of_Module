@@ -4,14 +4,14 @@ nav {
     font-family: 'Bruno Ace SC', cursiv;
 }
 
-li {
+nav li {
     border: 3px solid;
     border-radius: 25px 15px;
     border-top: none;
     border-bottom: none;
 }
 
-li:hover {
+nav li:hover {
     font-weight: bolder;
     font-size: x-large;
 }
@@ -29,6 +29,10 @@ body {
 #image {
     background-image: url('./images/shutterstock_728178127-500px.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
 }
 .none {
     border: none;
@@ -36,3 +40,8 @@ body {
 #center {
     transform: translateY(-280px); 
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+

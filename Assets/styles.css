@@ -5,7 +5,7 @@ nav {
 }
 
 li {
-    border: 2px solid;
+    border: 3px solid;
     border-radius: 25px 15px;
     border-top: none;
     border-bottom: none;
@@ -18,13 +18,21 @@ li:hover {
 
 li a {
     text-decoration: none;
-    color: white;
 }
-
 body {
     color: black;
 }
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto; 
+}
+#image {
+    background-image: url('./images/shutterstock_728178127-500px.jpg');
+    background-repeat: no-repeat;
+}
+.none {
+    border: none;
+}
+#center {
+    transform: translateY(-280px); 
 }

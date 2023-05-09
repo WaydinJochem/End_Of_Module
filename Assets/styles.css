@@ -44,14 +44,6 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
 }
-#SlideIn {
-    animation-name: backInLeft;
-    animation-duration: infinite;
-    
-}
-@keyframes #SlideIn {
-    0% {
-        background-color: white;
-    }
-    100%
+.card {
+    width: 18rem;
 }

@@ -25,6 +25,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto; 
+    margin-left: 100px;
 }
 #image {
     background-image: url('./images/shutterstock_728178127-500px.jpg');

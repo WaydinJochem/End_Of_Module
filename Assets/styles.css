@@ -40,10 +40,7 @@ body {
 #center {
     transform: translateY(-280px); 
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
+
 .card {
-    width: 18rem;
+    width: 20rem;
 }

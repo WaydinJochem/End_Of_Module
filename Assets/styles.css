@@ -51,3 +51,9 @@ body {
 .card {
     width: 20rem;
 }
+/* images */
+#first-pic {
+    height: 200px;
+    width: 150px;
+    
+}

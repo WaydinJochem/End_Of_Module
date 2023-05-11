@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -25,14 +25,11 @@ nav li:hover {
 li a {
     text-decoration: none;
 }
+
 body {
     color: black;
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto; 
-    margin-left: 100px;
-}
+
 #image {
     background-image: url('./images/shutterstock_728178127-500px.jpg');
     background-repeat: no-repeat;
@@ -41,19 +38,44 @@ body {
     width: 100%;
 
 }
+
 .none {
     border: none;
 }
+
 #center {
-    transform: translateY(-280px); 
+    transform: translateY(-280px);
 }
 
 .card {
     width: 20rem;
 }
+
 /* images */
 #first-pic {
     height: 200px;
     width: 150px;
-    
+
+}
+#secondpic{
+    height: 200px;
+    width: 150px;
+
+}
+#thirdpic {
+    height: 200px;
+    width: 150px;
+
+}
+
+input {
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+:-moz-placeholder {
+    text-align: center;
 }

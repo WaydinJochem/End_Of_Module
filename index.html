@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Foldit' rel='stylesheet'>
 </head>
 
-<body class="bg-dark-subtle container">
+<body class="bg-dark-subtle pe-0" id="image">
     <header>
         <!-- Nav Bar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
@@ -35,18 +37,18 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="none"><a class="dropdown-item" href="#WAI">Who Am I</a></li>
-                                <li class="none"><a class="dropdown-item" href="#">Experience</a></li>
-                                <li class="none"><a class="dropdown-item" href="#">Skills</a></li>
+                                <li class="none"><a class="dropdown-item" href="#E">Experience</a></li>
+                                <li class="none"><a class="dropdown-item" href="#S">Skills</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Testimonials</a>
+                            <a class="nav-link" href="#Projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#Contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Projects">Projects</a>
                         </li>
                     </ul>
                 </div>
@@ -54,20 +56,22 @@
         </nav>
         <!-- Nav Bar -->
         <!-- Landing Page -->
-        <div>
-            <div id="image" class="container-fluid">
-                <h1 class="text-center text-decoration-underline fw-bold text-light">Waydin Jochem</h1>
-                <img src="./Assets/images/Waydin Jochem C12 C1 25Apr23 (2).JPG"
-                    class="d-block mx-auto border border-subtle rounded-circle text-center text-light img-fluid " alt=""
-                    style="width: 250px; height: 20%;">
-                <marquee behavior="scroll" direction="up" id="center" class="text-uppercase text-light" width="50%">
-                    <h3>Aspiring Software Dev</h3><br>
-                    <h3>Aspiring Tech-Guru</h3><br>
-                    <h3>Aspiring Millionaire</h3><br>
-                    <h3>Aspiring to Be More</h3>
-                </marquee>
+        <section id="image" class="img-fluid">
+            <div>
+                <div class="container">
+                    <h1 class="text-center text-decoration-underline fw-bold text-light">Waydin Jochem</h1>
+                    <img src="./Assets/images/Waydin Jochem C12 C1 25Apr23 (2).JPG"
+                        class="d-block mx-auto border rounded-circle text-center img-fluid" alt="" id="profile">
+                    <marquee behavior="scroll" direction="up" id="center" class="text-uppercase text-light fold"
+                        width="50%">
+                        <h3>Aspiring Software Dev</h3><br>
+                        <h3>Aspiring Tech-Guru</h3><br>
+                        <h3>Aspiring Millionaire</h3><br>
+                        <h3>Aspiring to Be More</h3>
+                    </marquee>
+                </div>
             </div>
-        </div>
+        </section>
         <!-- Landing Page -->
     </header>
     <!-- Start Of About -->
@@ -76,10 +80,10 @@
             <div class="row p-1">
                 <div id="E&E" class="col-sm-4">
                     <!-- Card 1 Start -->
-                    <div class="card" id="WAI">
+                    <div class="card bg-info-subtle" id="WAI">
                         <img src="" class="card-img-top" alt="">
                         <div class="card-body">
-                            <h4 class="card-title">Who am I</h4>
+                            <h4 class="card-title" class="playball">Who am I</h4>
                             <p class="card-text">My Name is Waydin Jochem, I am a 20 year-old man currently residing in
                                 Cape
                                 Town, South Africa. I done my primary-schooling at Saint John's Roman Catholic Primary
@@ -101,15 +105,15 @@
                 </div>
                 <div class="col-sm-4">
                     <!-- Card 2 Start -->
-                    <div class="card">
+                    <div class="card bg-info-subtle" id="E">
                         <div class="card-body">
                             <div class="">
-                                <h4 class="card-title">Experience</h4>
+                                <h4 class="card-title" class="playball">Experience</h4>
 
                                 <div id="carouselExampleControls" class="carousel carousel-dark slide"
                                     data-bs-ride="carousel">
                                     <div class="carousel-inner">
-                                        <!-- Carouse 1 Start -->
+                                        <!-- Carousel 1 Start -->
                                         <div class="carousel-item active">
                                             <ul class="list-unstyled">
                                                 <li>
@@ -189,11 +193,11 @@
                 </div>
                 <div class="col-sm-4">
                     <!-- Card 3 Start -->
-                    <div class="card">
+                    <div class="card bg-info-subtle" id="S">
                         <img src="" class="card-img-top" alt="">
                         <div class="card-body">
                             <div class="grid-item">
-                                <h4 class="card-title">Skills</h4>
+                                <h4 class="card-title" class="playball">Skills</h4>
                                 <p class="card-text">
                                 <h5>Skills include:</h5>
                                 <ul>
@@ -217,15 +221,73 @@
     <!-- Projects Section -->
     <section class="bg-danger-subtle" id="Projects">
         <div class="animate_animated animate_rubberBand animate__slower">
-            <h2>Projects</h2>
-
+            <h2 class="playball">Projects</h2>
+            <!-- Project Card 1 -->
+            <div class="container">
+                <div class="card">
+                    
+                    <div class="card-body">
+                        <img src="./Assets/images/Website_gambar.jpg" class="card-img-top" alt="...">
+                        
+                    </div>
+                </div>
+                <!-- Project Card 1 -->
+                <!-- Project Card 2 -->
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <!-- Project Card 3 -->
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <!-- Project Card 4 -->
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <!-- Project Card 4 -->
+                <!-- Project Card 5 -->
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <!-- Project Card 5 -->
+            </div>
         </div>
     </section>
     <!-- Project Section -->
     <!-- Testimonials -->
-    <section class="bg-warning p-3">
+    <section class="bg-warning p-3" id="testimonials">
         <div class="container">
-            <h2 class="text-center">Testimonial</h2>
+            <h2 class="text-center playball">Testimonial</h2>
             <div class="accordion" id="accordionPanelsStayOpenExample">
                 <!-- Accordion Item #1 -->
                 <div class="accordion-item">
@@ -233,7 +295,7 @@
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                             aria-controls="panelsStayOpen-collapseOne">
-                            Testimonial #1
+                            Ayesha Galant
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
@@ -241,14 +303,15 @@
                         <div class="accordion-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="border border-info p-0">
+                                    <div class="p-0">
                                         <img src="./Assets/images/C12 Ayesha Galant Class1 (1).JPG" alt=""
                                             id="first-pic" class="img-fluid border rounded-circle">
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-5 ml-auto  mt-md-0">
-                                    <div class="border border-info me-4">
-                                        <p class="ms-5"><strong>"</strong>Waydin is dedicated and very passionate about
+                                    <div class="me-4">
+                                        <p><strong>"</strong>Waydin is dedicated and very passionate
+                                            about
                                             her work.
                                             Working together makes me motivated to go above and beyond to reach our
                                             goals and of
@@ -259,13 +322,14 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Accordion 1 -->
                     <!-- Accordion Item #2 -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                                 aria-controls="panelsStayOpen-collapseTwo">
-                                Testimonial #2
+                                Abdoel Samaai
                             </button>
                         </h2>
                         <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
@@ -274,12 +338,13 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div>
-                                            <img src="./Assets/images/C12 Abdoelmaaliek Samaai (1).JPG" class="img-fluid border rounded-circle" id="secondpic" alt="">
+                                            <img src="./Assets/images/C12 Abdoelmaaliek Samaai (1).JPG"
+                                                class="img-fluid border rounded-circle" id="secondpic" alt="">
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0">
                                         <div>
-                                            <p class="ms-5"><strong>"</strong>WaydinJochem: Is a Man that faces
+                                            <p><strong>"</strong>WaydinJochem: Is a Man that faces
                                                 challenges head on
                                                 and is not
                                                 afraid to speak and give his opinion.He doesn't rush into situations
@@ -298,13 +363,14 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Accordion 2 -->
                     <!-- Accordion item #3 -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                                 aria-controls="panelsStayOpen-collapseThree">
-                                Testimonial #3
+                                Zulaigah Benjamin
                             </button>
                         </h2>
                         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
@@ -312,25 +378,106 @@
                             <div class="accordion-body">
                                 <div class="row">
                                     <div class="col-md-6">
-                                      <div>
-                                       <img src="./Assets/images/IMG_2409.JPG"  class="img-fluid border rounded-circle" id="thirdpic"
-                                       alt="">
-                                      </div>
+                                        <div>
+                                            <img src="./Assets/images/IMG_2409.JPG"
+                                                class="img-fluid border rounded-circle" id="thirdpic" alt="">
+                                        </div>
                                     </div>
                                     <div class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0">
-                                      <div>
-                                        <p><strong>"</strong>Working with Waydin is a pleasure.He is good at seeing the big picture in both the areas of database design and data definition. His ability to asses a situation from all angles and see the myriad of potential ramifications of a particular course of action was very helpful. And always lends a helping hand where needed<strong>"</strong></p>
+                                        <div>
+                                            <p><strong>"</strong>Working with Waydin is a pleasure.He
+                                                is good at seeing
+                                                the big picture in both the areas of database design and data
+                                                definition. His ability to asses a situation from all angles and see the
+                                                myriad of potential ramifications of a particular course of action was
+                                                very helpful. And always lends a helping hand where
+                                                needed<strong>"</strong></p>
+                                        </div>
                                     </div>
-                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion 3 -->
+                <!-- Accordion 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFour">
+                            Sidwell Batyi
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingFour">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <img src="./Assets/images/image.png" class="img-fluid border rounded-circle"
+                                            id="secondpic" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0">
+                                    <div>
+                                        <p class="playball"><strong>"</strong>Waydin is an energetic young lad, he is an
+                                            extrovert that works great with teams because he adds his own energy to any
+                                            situation which makes working with him a breeze<strong>"</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion 4 -->
+                <!-- Accordion 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFive">
+                            Zulaigah Benjamin
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingFive">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <img src="./Assets/images/image (1).png" class="img-fluid border rounded-circle"
+                                            id="thirdpic" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0">
+                                    <div>
+                                        <p class="playball"><strong>"</strong>Waydin's eagerness to learn and
+                                            willingness to ask questions have made him a valuable member of our team. He
+                                            is new to coding but has been steadily improving his skills. His bright
+                                            personality and positive attitude make working with him one on one a
+                                            pleasure. Waydin's enthusiasm for learning and willingness to ask questions
+                                            have been invaluable to our team. He is new to coding but has quickly become
+                                            a valuable contributor to our projects. His bright personality and eagerness
+                                            to learn make him a pleasure to work with. As Waydin's team leader, I have
+                                            been impressed with his dedication to learning and his willingness to ask
+                                            questions. He has a natural talent for coding and has been steadily
+                                            improving his skills. His positive attitude and eagerness to learn make him
+                                            a valuable asset to our team.
+                                            needed<strong>"</strong></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Accordion 5 -->
     </section>
     <!-- Testimonials -->
     <!-- Start of footer Sub-section -->
-    <footer class="border border-3 border-white bg-warning-subtle mt-5" id="Contact">
+    <footer class="mt-5" id="Contact">
         <div class="row text-center">
             <div class="col-sm-4">
                 <h6 class="text-secondary">Home</h6>
@@ -361,43 +508,45 @@
             links
         </div>
         <!-- End of Footer Sub-section -->
-        <div id="Contact" class="py-3 bg-body-secondary container">
+        <div id="Contact" class="py-3 container">
             <!-- Start of contact -->
             <form action="https://formspree.io/f/meqwnbyb" method="POST">
                 <div>
-                    <div class="text-center bg-warning container p-3">
-                        <div class="row">
+                    <div class="text-center p-3">
+                        <div>
                             <label class="col-12">
                                 Name:
                             </label>
-                            <input class="col-3 mx-auto" type="text" name="Name" placeholder="FullName">
+                            <input class="border rounded" type="text" name="Name" placeholder="FullName" required>
                         </div>
                         <div class="mt-2"><label class="col-12">
                                 Contact Number
                             </label>
-                            <input class="col-3 mx-auto " type="tel" name="Number" placeholder=" Cellphone Number">
+                            <input class="border rounded" type="tel" name="Number" placeholder=" Cellphone Number"
+                                required>
                         </div>
                         <div class="mt-2"> <label class="col-12 mx-auto">
                                 Your email:
                             </label>
-                            <input type="email" name="email" placeholder="name@gmail.com">
+                            <input class="border rounded" type="email" name="email" placeholder="name@gmail.com"
+                                required>
                         </div>
                         <div class="mt-2">
                             <div><label class="col-12 mx-auto">
                                     Your message:
                                 </label>
                             </div>
-                            <textarea class="container-fluid" placeholder="Insert Message" cols="50"
+                            <textarea class="container-fluid border rounded " placeholder="Insert Message" cols="50"
                                 rows="13"></textarea>
                         </div>
-                        <div> <button type="submit">Send</button></div>
+                        <div> <button class="btn btn-dark p-2" type="submit">Send</button></div>
                     </div>
                 </div>
             </form>
             <!-- End Of Contact -->
         </div>
-        <div class="bg-body-secondary">
-            <img src="./Assets/icons/icons8-twitter-circled.gif" alt="" width="40px" class="text-left"><a
+        <div class="bg-body-secondary text-center">
+            <img src="./Assets/icons/icons8-twitter-circled.gif" id="icon" class="text-left p-3"><a
                 href=" https://twitter.com/WaydinJochem?t=TbGXE_43BrbopC1Z5_H1Iw&s=31">Twitter</a></img>
             &copy; 2023 Waydin Jochem
         </div>

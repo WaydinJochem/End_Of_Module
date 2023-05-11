@@ -31,12 +31,9 @@ body {
 }
 
 #image {
-    background-image: url('./images/shutterstock_728178127-500px.jpg');
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-attachment: fixed;
-    width: 100%;
-
+    background-image: url('./images/images.j');
+    background-repeat: repeat;
+    background-color: aliceblue;
 }
 
 .none {
@@ -67,6 +64,9 @@ body {
     width: 150px;
 
 }
+#icon {
+    width: 20px;
+}
 
 input {
     text-align: center;
@@ -78,4 +78,15 @@ input {
 
 :-moz-placeholder {
     text-align: center;
+}
+#profile {
+    height: 300px;
+    width: 200px;
+}
+.playball {
+    font-family:"Bebas Neue";
+    text-transform: uppercase;
+}
+.fold {
+    font-family: 'Foldit';
 }

@@ -153,19 +153,6 @@ input {
 }
 
 /* Flip-card End */
-.glow {
-    content: '#vier';
-    animation-name: flip;
-    animation-duration: 2s;
-}
-
-@keyframes flip {
-        {
-        transform: rotateX(180deg);
-    }
-
-}
-
 .map {
     list-style-image: url('./images/icons8-internet-48.png');
 }
@@ -174,6 +161,6 @@ input {
     list-style-image: url('./icons/icons8-letter.gif');
 }
 
-.no {
+#no {
     list-style-image: url('./icons/icons8-phone.gif');
 }

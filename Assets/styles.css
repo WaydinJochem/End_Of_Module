@@ -26,14 +26,13 @@ li a {
     text-decoration: none;
 }
 
-body {
-    color: black;
+#image {
+    background-image: linear-gradient(white, grey, white, grey, white, grey);
+    border-radius: 20%;
 }
 
-#image {
-    background-image: url('./images/images.j');
-    background-repeat: repeat;
-    background-color: aliceblue;
+nav {
+    background-color: transparent;
 }
 
 .none {
@@ -147,8 +146,25 @@ input {
     color: white;
     transform: rotateY(180deg);
 }
-.cardpic{
+
+.cardpic {
     height: 200px;
     width: 200px;
 }
+
 /* Flip-card End */
+.glow {
+    content: '#vier';
+    animation-name: flip;
+    animation-duration: 2s;
+}
+
+@keyframes flip {
+        {
+        transform: rotateX(180deg);
+    }
+
+}
+.map {
+    list-style-image: url('./images/icons8-internet-48.png');
+}

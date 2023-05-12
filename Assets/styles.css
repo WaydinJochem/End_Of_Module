@@ -165,6 +165,15 @@ input {
     }
 
 }
+
 .map {
     list-style-image: url('./images/icons8-internet-48.png');
+}
+
+.ad {
+    list-style-image: url('./icons/icons8-letter.gif');
+}
+
+.no {
+    list-style-image: url('./icons/icons8-phone.gif');
 }
